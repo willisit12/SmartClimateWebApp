@@ -108,7 +108,7 @@ The training script (`train_models.py`) is designed to be modular and efficient:
 ### Flask Application Structure
 
 The application follows a modular structure for scalability and maintainability:
-
+SmartClimateDashboard/ │ ├── app.py ├── config.py ├── forms.py ├── models.py ├── routes.py ├── run.py ├── requirements.txt ├── train_models.py ├── artifacts/ │ ├── synthetic_ac_light_data.csv │ ├── ac_temperature_regressor.pkl │ └── light_status_classifier.pkl │ ├── templates/ │ ├── base.html │ ├── index.html │ ├── login.html │ ├── register.html │ └── dashboard.html │ └── static/ └── style.css
 
 ### Database Setup with SQLite3
 
