@@ -1,0 +1,19 @@
+/* static/style.css */
+
+body {
+    padding-top: 70px;
+}
+
+.jumbotron {
+    padding: 2rem 1rem;
+    background-color: #f8f9fa;
+    border-radius: 0.3rem;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+.list-group-item {
+    font-size: 1.1rem;
+}

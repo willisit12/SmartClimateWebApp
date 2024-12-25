@@ -1,0 +1,19 @@
+<!-- templates/index.html -->
+
+{% extends "base.html" %}
+
+{% block content %}
+<div class="jumbotron mt-4">
+    <h1 class="display-4">Welcome to SmartClimateDashboard!</h1>
+    <p class="lead">Manage and predict your home climate and lighting intelligently.</p>
+    <hr class="my-4">
+    {% if current_user.is_authenticated %}
+        <p>Access your dashboard to make predictions and view your history.</p>
+        <a class="btn btn-primary btn-lg" href="{{ url_for('main.dashboard') }}" role="button">Go to Dashboard</a>
+    {% else %}
+        <p>Please log in or register to start using the dashboard.</p>
+        <a class="btn btn-primary btn-lg" href="{{ url_for('main.login') }}" role="button">Login</a>
+        <a class="btn btn-secondary btn-lg" href="{{ url_for('main.register') }}" role="button">Register</a>
+    {% endif %}
+</div>
+{% endblock %}
